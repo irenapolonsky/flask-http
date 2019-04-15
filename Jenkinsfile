@@ -8,7 +8,7 @@ node('docker-slave-general') {
   
   stage('Git') { // Get code from GitLab repository
     git branch: 'master',
-      url: 'https://github.com/MadDamDam/flask-http.git'
+      url: 'https://github.com/irenapolonsky/flask-http.git'
   }
   
   stage('Build') { // Run the docker build
